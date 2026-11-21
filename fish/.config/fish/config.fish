@@ -23,11 +23,6 @@ set -q XDG_STATE_HOME || set -U XDG_STATE_HOME $HOME/.local/state
 set -q XDG_CONFIG_HOME || set -U XDG_CONFIG_HOME $HOME/.config
 set -q XDG_CACHE_HOME || set -U XDG_CACHE_HOME $HOME/.cache
 
-# Активная палитра starship генерируется theme-apply в state-каталог.
-if test -f "$XDG_STATE_HOME/theme/starship.toml"
-    set -gx STARSHIP_CONFIG "$XDG_STATE_HOME/theme/starship.toml"
-end
-
 # direnv: окружение из .envrc при входе в каталог проекта.
 if type -q direnv
     direnv hook fish | source
