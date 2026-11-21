@@ -23,3 +23,6 @@ end
 
 _G.ApplyTheme = apply_theme
 apply_theme()
+
+local ok, matugen = pcall(require, 'matugen')
+if ok then matugen.setup() end
