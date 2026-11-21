@@ -330,8 +330,6 @@ REAPER ходит в ALSA напрямую (`hw:speed`), поэтому его �
 
 ## Резервное копирование
 
-## Резервное копирование
-
 `scripts/.local/bin/restic-backup` делает инкрементальный бэкап
 `~/Music`, `~/Workspace`, `~/Documents`, `~/.notes`, `~/.ssh`,
 `~/.gnupg`, `~/.config/{dconf,autostart}` и `~/.local/share/fonts`
